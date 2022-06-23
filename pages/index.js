@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
-// import Image from 'next/image';
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-const imgUrl = '/nextjs-github-actions';
+
+const imgUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
 const Index = ({ stories }) => {
   const router = useRouter();
   // console.log('check', router.isFallback);
