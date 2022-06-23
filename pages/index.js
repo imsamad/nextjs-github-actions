@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import axios from 'axios';
 // import Image from 'next/image';
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-
+const imgUrl = 'https://imsamad.github.io/nextjs-github-actions/';
 const Index = ({ stories }) => {
   const router = useRouter();
   // console.log('check', router.isFallback);
@@ -28,7 +29,12 @@ const Index = ({ stories }) => {
           placeItems: 'center',
         }}
       >
-        <img height={300} width={400} src="/pix/samad.jpeg" alt="my-photo" />
+        <img
+          height={300}
+          width={400}
+          src={`${imgUrl}/pix/samad.jpeg`}
+          alt="my-photo"
+        />
       </div>
       {stories.map((story) => (
         <h2 key={story._id} style={{ marginTop: 4, padding: 2 }}>
