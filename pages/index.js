@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 // import Image from 'next/image';
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-const imgUrl = 'https://imsamad.github.io/nextjs-github-actions/';
+const imgUrl = '/nextjs-github-actions';
 const Index = ({ stories }) => {
   const router = useRouter();
   // console.log('check', router.isFallback);
