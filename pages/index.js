@@ -18,6 +18,8 @@ const Index = ({ stories }) => {
   // }, []);
   return (
     <div>
+      <h1>Hello</h1>
+
       <div
         style={{
           border: '2px solid gray',
